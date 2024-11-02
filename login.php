@@ -54,7 +54,7 @@ $client->addScope("profile");
             <?php endif; ?>
 
             <!-- Formulario de registro -->
-            <form action="<?php echo $islogin ? './procesarFormulario.php' :  './procesarRegistro.php';?>" method="post">
+            <form action="<?php echo $islogin ? './handlers/procesarFormulario.php' :  './handlers/procesarRegistro.php';?>" method="post">
                 <div class="input_box">
                     <input type="text" name="username" id="user" class="input-field" required />
                     <label for="user" class="label">Username</label>
