@@ -9,7 +9,7 @@ $success = isset($_GET['success']) ? htmlspecialchars($_GET['success']) : '';
 // si pulsa en already have an account lo redirige a iniciar sesión
 
 if (isset($_SESSION['user'])) {
-    header('Location: ../ola.php');
+    header('Location: ./index.php');
     exit;
 }
 // Determinar si se está en la acción de login
