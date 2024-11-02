@@ -9,15 +9,15 @@ $success = isset($_GET['success']) ? htmlspecialchars($_GET['success']) : '';
 // si pulsa en already have an account lo redirige a iniciar sesión
 
 if (isset($_SESSION['user'])) {
-    header('Location: ./index.php');
+    header('Location: ../ola.php');
     exit;
 }
 // Determinar si se está en la acción de login
 $islogin = !isset($_GET['action']) || $_GET['action'] == 'login';
 
 
-require_once 'vendor/autoload.php';
-require_once 'config.php';
+require_once './vendor/autoload.php';
+require_once './config.php';
 
 $client = new Google_Client();
 $client->setClientId($clientID);
@@ -37,7 +37,7 @@ $client->addScope("profile");
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php $islogin ? 'Login': 'Registro';?> </title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/registro.css" />
+    <link rel="stylesheet" href="./css/registro.css?v=<?php echo time(); ?>" />
 </head>
 
 <body>
