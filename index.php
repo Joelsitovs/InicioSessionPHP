@@ -17,7 +17,7 @@ if (isset($_SESSION['user'])) { // Cambia 'user' por la clave que uses para alma
 </head>
 <body>
 <?php if (isset($_SESSION['user'])): ?>
-    <a href="./logout.php">Cerrar sesión</a>
+    <a href="./handlers/logout.php">Cerrar sesión</a>
 <?php else: ?>
     <a href="./login.php">Iniciar sesión</a>
 <?php endif; ?>

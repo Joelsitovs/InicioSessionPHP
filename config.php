@@ -18,8 +18,14 @@ echo "Redirect URI: $redirectURI<br>";
 /*$clientID ="743..";
 $clientSecret = "GOCS..";
 $redirectURI = 	"https://";
-*/
 
+Si no funciona puedes probar a cargar las variables manualmente
+
+/*
+$clientID ="743439063174-......apps.googleusercontent.com";
+$clientSecret = "GOCSPX-.....";
+$redirectURI = 	"https://(dominio)/handlers/login_Google.php";
+*/
 
 ?>
 

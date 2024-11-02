@@ -49,7 +49,7 @@ function comprobar_usuario($conexion, $usuario, $correo, $contraseña) {
 
 function iniciar_sesion($usuario_datos) {
     session_start();
-    $_SESSION['usuario'] = $usuario_datos['usuario']; // Nombre del usuario
+    $_SESSION['user'] = $usuario_datos['usuario']; // Nombre del usuario
     header("Location: ../index.php"); // Redirigir a la página principal después del login
     exit();
 }
