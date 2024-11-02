@@ -14,3 +14,4 @@ Notificaciones de Estado: Incluye alertas de éxito o error al iniciar sesión, 
 
 Tecnologías: PHP para la lógica del backend y manejo de sesiones, HTML y CSS para la interfaz de usuario, y MySQL como base de datos.
 
+by joelsitovs
