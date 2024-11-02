@@ -101,7 +101,7 @@ function enviar_correo_confirmacion($correo, $token) {
         $mail->isHTML(true); 
         $mail->Subject = 'Confirma tu correo';
         $mail->Body = 'Por favor confirma tu correo haciendo clic en el siguiente enlace: ' . 
-               'http://' . $_SERVER['HTTP_HOST'] . '/handlers/confirmar.php?token=' . $token;
+               'https://' . $_SERVER['HTTP_HOST'] . '/handlers/confirmar.php?token=' . $token;
 
 
         // Enviar el correo

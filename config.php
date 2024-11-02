@@ -15,9 +15,9 @@ echo "Client ID: $clientID<br>";
 echo "Client Secret: $clientSecret<br>";
 echo "Redirect URI: $redirectURI<br>";
 
-/*$clientID ="743439063174-bctqpp6rdeb2qvcjk02nl23cuok04460.apps.googleusercontent.com";
-$clientSecret = "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";
-$redirectURI = 	"https://iniciarsesion.caowthing.es/handlers/login_Google.php";
+/*$clientID ="743..";
+$clientSecret = "GOCS..";
+$redirectURI = 	"https://";
 */
 
 
