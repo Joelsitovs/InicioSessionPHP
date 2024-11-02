@@ -1,4 +1,6 @@
 # InicioSesionPhp
+Para probar esto puedes ingresar a la siguiente url https://iniciarsesion.caowthing.es/login.php?action=login
+
 
 Este proyecto proporciona un sistema de autenticación de usuarios que incluye funcionalidades para el inicio de sesión, registro y verificación segura de credenciales.
 
