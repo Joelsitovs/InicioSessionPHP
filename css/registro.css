@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  
+}
+.login_box{
+   position: relative;
+    width: 400px;
+    padding: 6em 2.5em 4em 2.5em;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(131, 125, 125, 0.5);
+    border: 1px solid white;
+}
+.login-header{
+    position: absolute;
+    top: 0 ;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 70px;
+}
+.login-header span{
+    font-size: 20px;
+    color: #ffffff;
+}
+.error{
+    background-color: #f8d7da; /* Fondo verde claro */
+    color: red; /* Texto verde oscuro */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #f5c6cb; /* Borde verde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center;
+}
+.success{
+    background-color: #d4edda; /* Fondo verde claro */
+    color: #155724; /* Texto verde oscuro */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #c3e6cb; /* Borde verde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.input-field{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.label{
+    position: absolute;
+    top: 11px;
+    left: 0;
+    padding: 10px;
+    color: white;
+    pointer-events: none;
+    transition: .3s;
+}
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+   position: absolute;
+    top: -10px;
+    left: 0;
+    padding: 5px;
+    color: #fff;
+    background: #000;
+    transition: .5s;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+}
+.input_box .input_submit{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input_box .input_submit:hover{
+    background: #aaaaaa;
+    color: #000;
+    transition: 0.5s ease; 
+
+}
+@media only screen and (max-width: 564px){
+    .wrapper{
+        padding: 20px
+    }
+    .login_box{
+        padding: 7.5em 1.5em 4em 1.5em;
+    }
+}
+
+ /* Estilos adicionales para el autocompletado en foco */
+ input:-webkit-autofill:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(255, 255, 255); /* Cambia el color del texto */
+    -webkit-box-shadow: 0 0 0px 105px rgb(0, 0, 0) inset; /* Cambia el color del fondo */
+}
+.button{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a_google{
+    color: #000;
+    text-decoration: none;
+
+}
+.button:hover{
+    background: #aaaaaa;
+    color: #000;
+    transition: 0.5s ease; 
+}
+.button svg{
+    margin-right: 10px;
+}
+.login-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+.login-footer a::before,
+.login-footer a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Ajusta la posición según lo necesites */
+    height: 1px;
+    background-color: #aaaaaa;
+    transition: width 0.5s ease; /* Controla la duración de la animación */
+}
+
+.login-footer a::before {
+    left: 50%; /* Comienza desde el centro */
+    width: 0; /* Inicialmente, el ancho es 0 */
+    transform: translateX(-50%); /* Centra la línea inicial */
+}
+
+.login-footer a::after {
+    right: 50%; /* Comienza desde el centro */
+    width: 0; /* Inicialmente, el ancho es 0 */
+    transform: translateX(50%); /* Centra la línea inicial */
+}
+
+.login-footer a:hover {
+    color: #aaaaaa;
+}
+
+.login-footer a:hover::after {
+    width: 100%; /* La línea se expandirá completamente al hacer hover */
+}

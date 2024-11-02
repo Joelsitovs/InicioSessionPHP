@@ -1,0 +1,5 @@
+# Ignorar el archivo .env
+.env
+
+# Ignorar archivos de configuración sensibles
+config.php
