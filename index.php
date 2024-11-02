@@ -1,8 +1,12 @@
 <?php
 session_start();
-echo "Hola acabas de inicar sesión";
 
-
+// Verificamos si el usuario ha iniciado sesión
+if (isset($_SESSION['user'])) { // Cambia 'user' por la clave que uses para almacenar el nombre de usuario
+    echo "Hola, " . htmlspecialchars($_SESSION['user']) . ", acabas de iniciar sesión.";
+} else {
+    echo "No has iniciado sesión. Por favor, inicia sesión para continuar.";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +16,10 @@ echo "Hola acabas de inicar sesión";
     <title>Document</title>
 </head>
 <body>
-<a href="./handlers/logout.php">Cerrar sesión</a>
+<?php if (isset($_SESSION['user'])): ?>
+    <a href="./logout.php">Cerrar sesión</a>
+<?php else: ?>
+    <a href="./login.php">Iniciar sesión</a>
+<?php endif; ?>
 </body>
 </html>
