@@ -16,15 +16,7 @@ if (isset($_SESSION['user'])) {
 $islogin = !isset($_GET['action']) || $_GET['action'] == 'login';
 
 
-require_once './vendor/autoload.php';
-require_once './config.php';
 
-$client = new Google_Client();
-$client->setClientId($clientID);
-$client->setClientSecret($clientSecret);
-$client->setRedirectUri($redirectURI);
-$client->addScope("email");
-$client->addScope("profile");
 
 
 ?>
