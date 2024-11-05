@@ -1,5 +1,5 @@
 <?php
-require './vendor/autoload.php';
+require './vendor/autoload.php'; 
 
 // Asegúrate de que la ruta a la carpeta .env sea correcta
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ ); 
