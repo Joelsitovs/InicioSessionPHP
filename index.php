@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Verificamos si el usuario ha iniciado sesión
+// Verificamos si el usuario ha iniciado sesión 
 if (isset($_SESSION['user'])) { // Cambia 'user' por la clave que uses para almacenar el nombre de usuario
     echo "Hola, " . htmlspecialchars($_SESSION['user']) . ", acabas de iniciar sesión.";
 } else {
